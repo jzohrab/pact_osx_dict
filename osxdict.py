@@ -9,7 +9,7 @@ from macdict import lookup_word
 def lookup(word):
     definition = lookup_word(word)
     if definition:
-        definition = re.sub(r'\.\s+', '.\n\n', definition)
+        definition = re.sub(r'\.\s*', '.\n\n', definition)
     return definition
 
 
