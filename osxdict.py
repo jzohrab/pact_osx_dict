@@ -2,7 +2,7 @@ import sys
 import os
 import re
 
-sys.path.append(os.path.abspath(sys.path[0]) + '/vendor')
+sys.path.append(os.path.join(os.path.dirname(__file__), "vendor"))
 from macdict import lookup_word
 
 
