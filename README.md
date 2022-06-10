@@ -15,8 +15,17 @@ To use this as a Pact plugin:
 In the '[Pact]' section in your config.ini file, set
 
 ```
+LookupModule = myplugins.pact_osx_dict.builtin
+```
+
+or
+
+```
 LookupModule = myplugins.pact_osx_dict.osxdict
 ```
+
+Note: This was a proof-of-concept, mainly ... it uses the `macdict` python library to call the dictionary app, but the internal Apple library for the dict lookup doesn't seem to behave well (e.g. it only returns partial results).
+
 
 ## Development
 
